@@ -8,13 +8,13 @@
 Summary:	namespace::clean - Keep imports and functions out of your namespace
 #Summary(pl.UTF-8):	
 Name:		perl-namespace-clean
-Version:	0.09
-Release:	2
+Version:	0.11
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/namespace/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8edfbf0ccd9cb0557e7d0c5366d9f1f1
+# Source0-md5:	480c3735ffe40b491a4700df5e8659a3
 URL:		http://search.cpan.org/dist/namespace-clean/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
