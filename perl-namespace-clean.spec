@@ -8,7 +8,7 @@
 Summary:	namespace::clean - Keep imports and functions out of your namespace
 Name:		perl-namespace-clean
 Version:	0.22
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -24,8 +24,8 @@ BuildRequires:	perl-Package-Stash >= 0.23
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-# Tie::ExtraHash is present in Tie/Hash.pm package
-%define		_noautoreq_perl	Tie::ExtraHash
+# Tie::ExtraHash and Tie::StdHash are present in Tie/Hash.pm package
+%define		_noautoreq_perl	Tie::ExtraHash Tie::StdHash
 
 %description
 The namespace::clean pragma will remove all previously declared or
