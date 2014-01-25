@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	namespace::clean - Keep imports and functions out of your namespace
 Name:		perl-namespace-clean
-Version:	0.22
-Release:	3
+Version:	0.24
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/namespace/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6c79f5de86159682deea09ee13311eaa
+# Source0-md5:	bb6f2e2bba5f028a0e939cc6f2639fba
 URL:		http://search.cpan.org/dist/namespace-clean/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -58,5 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %dir %{perl_vendorlib}/namespace
 %{perl_vendorlib}/namespace/clean.pm
-%{perl_vendorlib}/namespace/clean
 %{_mandir}/man3/namespace::clean.3pm*
