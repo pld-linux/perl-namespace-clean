@@ -18,7 +18,7 @@ URL:		http://search.cpan.org/dist/namespace-clean/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(B::Hooks::EndOfScope)
+BuildRequires:	perl-B-Hooks-EndOfScope >= 0.13
 BuildRequires:	perl-Package-Stash >= 0.23
 %endif
 BuildArch:	noarch
