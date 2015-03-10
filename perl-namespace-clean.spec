@@ -6,21 +6,26 @@
 %define		pnam	clean
 %include	/usr/lib/rpm/macros.perl
 Summary:	namespace::clean - Keep imports and functions out of your namespace
+Summary(pl.UTF-8):	namespace::clean - trzymanie symboli importowanych i funkcji poza przestrzenią nazw
 Name:		perl-namespace-clean
-Version:	0.24
+Version:	0.25
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/namespace/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bb6f2e2bba5f028a0e939cc6f2639fba
+# Source0-md5:	da81d44f114a947b873f8df11a3c02ec
 URL:		http://search.cpan.org/dist/namespace-clean/
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.663
 %if %{with tests}
 BuildRequires:	perl-B-Hooks-EndOfScope >= 0.13
 BuildRequires:	perl-Package-Stash >= 0.23
+BuildRequires:	perl-Test-Simple >= 0.88
 %endif
+Requires:	perl-B-Hooks-EndOfScope >= 0.13
+Requires:	perl-Package-Stash >= 0.23
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,6 +37,12 @@ The namespace::clean pragma will remove all previously declared or
 imported symbols at the end of the current package's compile cycle.
 Functions called in the package itself will still be bound by their
 name, but they won't show up as methods on your class or instances.
+
+%description -l pl.UTF-8
+Reguła namespace::clean usuwa wszystkie uprzednio zadeklarowane lub
+zaimportowane symbole na końcu cyklu kompilacji bieżącego pakietu.
+Funkcje wywoływane w samym pakiecie pozostaną nadal dowiązane po ich
+nazwach, ale nie będą dostępne jako metody w klasach ani instancjach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
