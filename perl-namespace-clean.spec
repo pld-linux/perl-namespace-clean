@@ -4,7 +4,6 @@
 
 %define		pdir	namespace
 %define		pnam	clean
-%include	/usr/lib/rpm/macros.perl
 Summary:	namespace::clean - Keep imports and functions out of your namespace
 Summary(pl.UTF-8):	namespace::clean - trzymanie symboli importowanych i funkcji poza przestrzenią nazw
 Name:		perl-namespace-clean
