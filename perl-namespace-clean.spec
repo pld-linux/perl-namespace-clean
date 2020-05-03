@@ -14,10 +14,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/namespace/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cba97f39ef7e594bd8489b4fdcddb662
-URL:		http://search.cpan.org/dist/namespace-clean/
+URL:		https://metacpan.org/release/namespace-clean
 BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	rpmbuild(macros) >= 1.663
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-B-Hooks-EndOfScope >= 0.13
 BuildRequires:	perl-Package-Stash >= 0.23
