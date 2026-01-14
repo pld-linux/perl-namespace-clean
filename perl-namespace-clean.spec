@@ -8,7 +8,7 @@ Summary:	namespace::clean - Keep imports and functions out of your namespace
 Summary(pl.UTF-8):	namespace::clean - trzymanie symboli importowanych i funkcji poza przestrzenią nazw
 Name:		perl-namespace-clean
 Version:	0.27
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
